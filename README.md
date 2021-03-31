@@ -1,11 +1,4 @@
-# Tech challenge Ironhack Barcelona 2019 - Todo REST API
-
-After forking and cloning this repository, run the following commands:
-```
-  cd challenge-todo-api
-  npm install
-  npm run watch
-```
+# Backend for the useExpense personal project
 
 ## Documentation
 ----
@@ -14,45 +7,43 @@ After forking and cloning this repository, run the following commands:
 
 ## Todo API endpoints
 
-### WARNING: The API is empty so don't expect any result if you don't add data.
-
-### Get All Todos
+### Get All Expenses
 ----
-  Returns json data with all todos.
+  Returns json data with all expenses.
   
   | URL | Method | Params | Data Params | Success response | Error response|
   |--|--|--|--|--|--|
-  |`/todos`|GET|None|None|Status 200||
+  |`/expenses`|GET|None|None|Status 200||
 
 
-**Get Todo**
+**Get Expense**
 ----
-  Returns json data about a single todo.
+  Returns json data about a single expense.
   
   | URL | Method | Params | Data Params | Success response | Error response|
   |--|--|--|--|--|--|
-  |`/todos/:id`|GET|`id=[ObjectId]`|None|Status 200|Status 404|
+  |`/expenses/:id`|GET|`id=[ObjectId]`|None|Status 200|Status 404|
 
-**Create Todo**
+**Create Expense**
 ----
-  Returns json data about the created todo.
+  Returns json data about the created expense.
   
   | URL | Method | Params | Data Params | Success response | Error response|
   |--|--|--|--|--|--|
-  |`/todos`|POST|None|`title=[String]`|Status 200|Status 400 |
+  |`/expense`|POST|None|`title=[String]`|Status 200|Status 400 |
 
-**Update Todo**
+**Update Expense**
 ----
-  Returns json data about the updated todo.
+  Returns json data about the updated expense.
   
   | URL | Method | Params | Data Params | Success response | Error response|
   |--|--|--|--|--|--|
-  |`/todos/:id`|PUT|`id=[ObjectId]`|`title=[String]`|Status 200|Status 400 |
+  |`/expenses/:id`|PUT|`id=[ObjectId]`|`title=[String]`|Status 200|Status 400 |
 
 
-**Delete Todo**
+**Delete Expense**
 ----
-  Returns json data about the deleted todo.
+  Returns json data about the deleted expense.
   
   | URL | Method | Params | Data Params | Success response | Error response|
   |--|--|--|--|--|--|

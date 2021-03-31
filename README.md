@@ -1,4 +1,4 @@
-# Backend for the useExpense personal project
+# useExpense project's API
 
 ## Documentation
 ----

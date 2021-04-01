@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 let Expense = new Schema(
   {
-    amount: { type: Number, default: 0 },
+    amount: { type: Number },
     category: { type: String },
   },
   {

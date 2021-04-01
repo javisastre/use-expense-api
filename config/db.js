@@ -1,3 +1,4 @@
 module.exports = {
-  DB: 'mongodb://localhost:27017/use-expense-db'
+  DB:
+    "mongodb+srv://user-expense-team:4TXffCGeZGLL6uGp@cluster0.qivae.mongodb.net/useexpensedb?retryWrites=true&w=majority",
 };

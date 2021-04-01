@@ -12,11 +12,11 @@ const app = express();
 
 mongoose.Promise = global.Promise;
 mongoose.connect(config.DB).then(
-  () => {console.log('Database is connected') },
+  () => {console.log('useExpense database is connected') },
   err => { console.log('Can not connect to the database'+ err)}
 );
 
-const todoRoute = require('./routes/todoRoute');
+const expenseRoute = require('./routes/expenseRoute');
 
 app.use(bodyParser.json());
 app.use(cors({
@@ -24,7 +24,7 @@ app.use(cors({
   origin: [publicDomain]
 }));
 
-app.use('/api/v1', todoRoute);
+app.use('/api', expenseRoute);
 
 const server = app.listen(port, function(){
   console.log('Listening on port ' + port);

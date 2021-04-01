@@ -1,3 +1,3 @@
 module.exports = {
-  DB: 'mongodb://localhost:27017/todo-challenge-ironhack-2019'
+  DB: 'mongodb://localhost:27017/use-expense-db'
 };

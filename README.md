@@ -30,7 +30,7 @@
   
   | URL | Method | Params | Data Params | Success response | Error response|
   |--|--|--|--|--|--|
-  |`/expense`|POST|None|`title=[String]`|Status 200|Status 400 |
+  |`/expenses`|POST|None|`title=[String]`|Status 200|Status 400 |
 
 **Update Expense**
 ----
@@ -47,4 +47,4 @@
   
   | URL | Method | Params | Data Params | Success response | Error response|
   |--|--|--|--|--|--|
-  |`/todos/:id`|DELETE|`id=[ObjectId]`|none|Status 200|Status 400 |
+  |`/expenses/:id`|DELETE|`id=[ObjectId]`|none|Status 200|Status 400 |

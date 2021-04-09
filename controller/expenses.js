@@ -60,7 +60,7 @@ class Controller {
         message: "expense does not exist",
       });
     }
-    if (!req.body.amount || !req.body.category || !req.body.isIncome) {
+    if (!req.body.amount || !req.body.category) {
       return res.status(400).send({
         success: "false",
         message: "amount and category are required",

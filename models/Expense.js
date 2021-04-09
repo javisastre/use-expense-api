@@ -5,6 +5,7 @@ let Expense = new Schema(
   {
     amount: { type: Number },
     category: { type: String },
+    isIncome: { type: Boolean, default: false },
   },
   {
     timestamps: {

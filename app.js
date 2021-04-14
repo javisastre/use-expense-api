@@ -6,7 +6,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const logger = require("morgan");
 const port = process.env.PORT;
-const publicDomain = "http://localhost:3000";
+const publicDomain = process.env.PUBLIC_DOMAIN;
 
 const config = require("./config/db");
 
@@ -29,7 +29,7 @@ app.use(logger("dev"));
 app.use(
   cors({
     credentials: true,
-    origin: [publicDomain],
+    origin: [publicDomain || "http://localhost:3000/"],
   })
 );
 

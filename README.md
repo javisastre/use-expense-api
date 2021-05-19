@@ -5,7 +5,7 @@
 
 ## API endpoints
 
-### Get All Expenses
+**Get All Expenses**
 ----
   Returns json data with all expenses.
   

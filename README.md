@@ -2,10 +2,8 @@
 
 ## Documentation
 ----
-## Rest Endpoint:
-`http://localhost:4000/api/v1`
 
-## Todo API endpoints
+## API endpoints
 
 ### Get All Expenses
 ----
